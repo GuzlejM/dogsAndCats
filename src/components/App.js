@@ -8,7 +8,7 @@ const App = () => {
     return (
     <div>
         <h1>
-            APP
+            Dogs and Cats
         </h1>
         <Navbar />
         <Categories />

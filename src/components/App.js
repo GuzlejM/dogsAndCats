@@ -14,20 +14,31 @@ const App = () => {
 
   const clientId = 'YGGMc3qjq5OLyki5BXQAKCV9ZMkJd59c7LRUI6kVlb0';
 
-  const getResponse = async () => {
+  const getDogs = async () => {
     const res = await axios.get(
       `https://api.unsplash.com/search/photos?query=dog&client_id=${clientId}&count=10`
       )
     setResults(res.data.results)
-    console.log(res)
   }
 
-  getResponse()
+  const getCats = async () => {
+    const res = await axios.get(
+      `https://api.unsplash.com/search/photos?query=cat&client_id=${clientId}&count=10`
+      )
+    setResults(res.data.results)
+  }
+
+  const getAnimals = async () => {
+    const res = await axios.get(
+      `https://api.unsplash.com/search/photos?query=animal&client_id=${clientId}&count=10`
+      )
+    setResults(res.data.results)
+  }
 
     return (
     <div className='p-2'>
         <Navbar />
-        <Categories />
+        <Categories getDogs={getDogs} getCats={getCats} getAnimals={getAnimals}/>
           {results.map((img) => {
             return (
               <div key={img.id}>

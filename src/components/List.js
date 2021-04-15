@@ -1,11 +1,18 @@
 import React from 'react';
 
-const List = () => {    
+const List = ({ results }) => {    
     return (
     <div>
-        <h1>
-            List
-        </h1>
+        {results.map((img) => {
+          return (
+            <div key={img.id}>
+              <img 
+              src={img.urls.small}
+              alt="unsplashImg"
+              className='w-full h-auto rounded-lg mt-4'/>
+            </div>
+          )
+        })}
     </div>
   );
 };

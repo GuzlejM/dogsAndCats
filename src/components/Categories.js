@@ -1,25 +1,28 @@
 import React from 'react';
 
-const Categories = ({ getDogs, getCats, getAnimals }) => {
+const Categories = ({ getImages }) => {
 
 
     return (
     <div>
-        <button 
+        <button
+        value='dog'
         className="w-1/3 outline-none"
-        onClick={getDogs}
+        onClick={getImages}
         >
             Dogs
         </button>
-        <button 
+        <button
+        value='cat'
         className="w-1/3 outline-none"
-        onClick={getCats}
+        onClick={getImages}
         >
             Cats
         </button>
-        <button 
+        <button
+        value='animal'
         className="w-1/3 outline-none"
-        onClick={getAnimals}
+        onClick={getImages}
         >
             Other
         </button>

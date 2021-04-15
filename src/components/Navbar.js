@@ -11,7 +11,7 @@ const Navbar = () => {
                 className='w-1/2'
                 
                 >
-                    <i class="far fa-user"></i>
+                    <i className="far fa-user"></i>
                 </button>
             </li>
 

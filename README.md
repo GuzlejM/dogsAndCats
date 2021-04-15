@@ -11,6 +11,7 @@ What I want to do here :
 
 - Login
 - Animal detail
-- Refactor
+- Refactor 
+- 15.04.21 Refactored, List component created 
 - FakerJS implement names ETC
-- maybe make dropdown work ? 
+- maybe make profile dropdown work ? 

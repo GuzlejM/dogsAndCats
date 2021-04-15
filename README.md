@@ -16,6 +16,7 @@ What I want to do here :
 FINISHED TASKS:
 - Card component - DONE 
 - FakerJS implement names ETC - DONE
+- Landing Page useEffect list loading data only once
 
 
 

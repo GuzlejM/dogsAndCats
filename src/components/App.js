@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Navbar from './Navbar';
 import Categories from './Categories';
@@ -12,6 +12,18 @@ const App = () => {
   //client ID to unsplash API
   const clientId = 'YGGMc3qjq5OLyki5BXQAKCV9ZMkJd59c7LRUI6kVlb0';
 
+  const getLandingPage= async () => {
+    const res = await axios.get(
+      `https://api.unsplash.com/search/photos?query=pets&client_id=${clientId}&count=10`
+      )
+    setResults(res.data.results)
+  }
+
+  useEffect(() => {
+    getLandingPage()
+  }, []);
+
+
   // Calling unsplash API and fetching pictures
   const getImages = async (e) => {
     const res = await axios.get(
@@ -19,6 +31,7 @@ const App = () => {
       )
     setResults(res.data.results)
   }
+
 
     return (
     <div className='p-2'>

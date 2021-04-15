@@ -9,14 +9,15 @@ Technologies used:
 
 What I want to do here :
 
-- Login
 - Animal detail
-- maybe make profile dropdown work ? 
+- Need to cread Card detail and pass it the same picture and name and everything
+- maybe make profile dropdown work ?
+- Login
 
 FINISHED TASKS:
 - Card component - DONE 
 - FakerJS implement names ETC - DONE
-- Landing Page useEffect list loading data only once
+- Landing Page used useEffect list is loading data only once - DONE
 
 
 

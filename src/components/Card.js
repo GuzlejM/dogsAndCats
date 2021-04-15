@@ -9,6 +9,9 @@ const Card = ({ results }) => {
           return (
             <div key={img.id} className='relative'>
               <img 
+              /* Showing img.id in the console need to pass it to CARD DETAIL*/
+              onClick={e => console.log(e.target.src, img.id)}
+              id={img.id}
               src={img.urls.small}
               alt="unsplashImg"
               className='w-full h-auto rounded-lg mt-4'

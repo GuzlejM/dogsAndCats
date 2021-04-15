@@ -30,16 +30,18 @@ const App = () => {
       `https://api.unsplash.com/search/photos?query=${e.target.value}&client_id=${clientId}&count=10`
       )
     setResults(res.data.results)
+
+    console.log(res)
   }
 
 
-    return (
-    <div className='p-2'>
-        <Navbar />
-        <Categories getImages={getImages}/>
-        <List results={results}/>
-        <Footer />
-    </div>
+  return (
+  <div className='p-2'>
+      <Navbar />
+      <Categories getImages={getImages}/>
+      <List results={results}/>
+      <Footer />
+  </div>
   );
 };
 

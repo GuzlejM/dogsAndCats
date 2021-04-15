@@ -7,21 +7,21 @@ const Categories = ({ getImages }) => {
     <div>
         <button
         value='dog'
-        className="w-1/3 outline-none"
+        className="w-1/3 focus:outline-none"
         onClick={getImages}
         >
             Dogs
         </button>
         <button
         value='cat'
-        className="w-1/3 outline-none"
+        className="w-1/3 focus:outline-none"
         onClick={getImages}
         >
             Cats
         </button>
         <button
         value='animal'
-        className="w-1/3 outline-none"
+        className="w-1/3 focus:outline-none"
         onClick={getImages}
         >
             Other

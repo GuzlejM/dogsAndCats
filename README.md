@@ -11,7 +11,10 @@ What I want to do here :
 
 - Login
 - Animal detail
-- Refactor 
-- 15.04.21 Refactored, List component created 
 - FakerJS implement names ETC
 - maybe make profile dropdown work ? 
+- Card component
+
+- REFACTOR
+- 15.04.21 Refactored, List component created 
+- Card component created 15.04.21

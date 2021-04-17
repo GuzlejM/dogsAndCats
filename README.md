@@ -5,12 +5,13 @@ Technologies used:
 2. Axios
 3. unsplash API
 4. fakerJS
+5. react-router
 5. And who knows what else
 
 What I want to do here :
 
-- Animal detail
-- Need to cread Card detail and pass it the same picture and name and everything
+- Card Detail 
+- React router - https://stackoverflow.com/questions/63958631/react-router-click-on-card-and-redirect-to-a-new-page-with-content-of-that-carq
 - maybe make profile dropdown work ?
 - Login
 

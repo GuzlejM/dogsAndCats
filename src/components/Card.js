@@ -7,10 +7,13 @@ const Card = ({ results }) => {
     <div>
         {results.map((img) => {
           return (
-            <div key={img.id} className='relative'>
+            <div 
+            key={img.id} 
+            className='relative'
+            onClick={e => console.log(e)}>
               <img 
-              /* Showing img.id in the console need to pass it to CARD DETAIL*/
-              onClick={e => console.log(e.target.src, img.id)}
+              /* Showing img.id in the console need to pass it to CARD DETAIL
+              onClick={e => console.log(e.target.src, img.id)}*/
               id={img.id}
               src={img.urls.small}
               alt="unsplashImg"

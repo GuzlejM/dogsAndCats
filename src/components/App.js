@@ -12,6 +12,7 @@ const App = () => {
   //client ID to unsplash API
   const clientId = 'YGGMc3qjq5OLyki5BXQAKCV9ZMkJd59c7LRUI6kVlb0';
 
+  // Generating Landing page pictures.
   const getLandingPage= async () => {
     const res = await axios.get(
       `https://api.unsplash.com/search/photos?query=pets&client_id=${clientId}&count=10`

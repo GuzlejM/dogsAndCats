@@ -35,7 +35,6 @@ const App = () => {
     console.log(res)
   }
 
-
   return (
   <div className='p-2'>
       <Navbar />

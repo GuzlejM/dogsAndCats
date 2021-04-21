@@ -1,5 +1,5 @@
 import React from 'react';
-import faker from 'faker'
+import faker from 'faker';
 
 
 const Card = ({ results }) => {    
@@ -10,7 +10,7 @@ const Card = ({ results }) => {
             <div 
             key={img.id} 
             className='relative'
-            onClick={e => console.log(e)}>
+            onClick={e => console.log(img)}>
               <img 
               /* Showing img.id in the console need to pass it to CARD DETAIL
               onClick={e => console.log(e.target.src, img.id)}*/
@@ -26,7 +26,7 @@ const Card = ({ results }) => {
                     <h2 className='ml-2 mb-1'>{Math.floor( Math.random() * 20 ) +1 }</h2>
                   </div>
                   <div className='w-1/2 flex justify-center content-center'>
-                      <button className='focus:outline-none h-10 w-40 text-white self-center rounded-lg bg-blue-500'>Donate 2 €</button>
+                      <button className='focus:outline-none h-10 w-40 text-white self-center rounded-lg bg-blue-500'>Read more</button>
                   </div>
 
               </div>

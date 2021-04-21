@@ -1,13 +1,18 @@
 import React from 'react';
 import faker from 'faker';
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 const Card = ({ results }) => {    
     return (
     <div>
         {results.map((img) => {
           return (
-            <div 
+            <div
             key={img.id} 
             className='relative'
             onClick={e => console.log(img)}>
@@ -25,12 +30,15 @@ const Card = ({ results }) => {
                     <h2 className='ml-2 mt-1 mb-1'>{faker.address.city()}</h2>
                     <h2 className='ml-2 mb-1'>{Math.floor( Math.random() * 20 ) +1 }</h2>
                   </div>
-                  <div className='w-1/2 flex justify-center content-center'>
-                      <button className='focus:outline-none h-10 w-40 text-white self-center rounded-lg bg-blue-500'>Read more</button>
-                  </div>
+                  <Router className='w-1/2 flex justify-center content-center'>
+                      <Link className='focus:outline-none h-10 w-40 text-white self-center rounded-lg bg-blue-500'>Read more</Link>
+                      
 
+
+                  </Router>
               </div>
             </div>
+            
           )
         })}
     </div>

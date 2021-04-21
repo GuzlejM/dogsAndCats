@@ -4,6 +4,15 @@ import Navbar from './Navbar';
 import Categories from './Categories';
 import List from './List';
 import Footer from './Footer';
+import CardDetail from './CardDetail'
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 
 const App = () => {
@@ -37,6 +46,10 @@ const App = () => {
 
   return (
   <div className='p-2'>
+      {/* <Switch>
+        <Route path='/' component={App} />
+        <Route path="/detail" component={CardDetail}/>
+      </Switch> */}
       <Navbar />
       <Categories getImages={getImages}/>
       <List results={results}/>
